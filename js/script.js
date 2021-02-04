@@ -1,20 +1,16 @@
 "use strict";
 
-let arrOfCards = [1,2,3,4,5,6,7,8,9];
 
-
-const shuffle = (array,num) => {
+// Function based on Fisher–Yates Shuffle algorithm
+const shuffle = (array,num=3) => {
 	let arrShuffle = array.slice();
 	let currentIndex = arrShuffle.length, temporaryValue, randomIndex;
 
-  // While there remain elements to shuffle...
 	while (0 !== currentIndex) {
 
-		// Pick a remaining element...
 		randomIndex = Math.floor(Math.random() * currentIndex);
 		currentIndex -= 1;
 
-		// And swap it with the current element.
 		temporaryValue = arrShuffle[currentIndex];
 		arrShuffle[currentIndex] = arrShuffle[randomIndex];
 		arrShuffle[randomIndex] = temporaryValue;
@@ -22,4 +18,15 @@ const shuffle = (array,num) => {
 	return arrShuffle.slice(0,num);
 }
 
-console.log(shuffle(arrOfCards,3))
+
+// Keys of object of Taro Cards
+let keysTarotArr = Object.keys(tarot);
+
+//Shuffle cards's keys
+let resultArr = shuffle(keysTarotArr);
+
+let firstCardURL = tarot[resultArr[0]].url;
+let secondCardURL = tarot[resultArr[0]].url;
+let thirdCardURL = tarot[resultArr[0]].url;
+
+console.log(resultArr);
