@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0">
 	<title>Taro Oracle</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <script type="text/javascript" src="js/cards-and-answers.js"></script>
-	<script type="text/javascript" src="js/script.js"></script> -->
 </head>
 <body>
 	<div class="wrapper">
@@ -17,30 +15,29 @@
 
 <!-- Header -->
 					<div class="game-block__header header-block">
-						<h1 class="header-block__text">TAROT READING
-	<br>FOR MODERN FOLKS</h1>
+						<h1 class="header-block__text">TAROT READING<br>FOR MODERN FOLKS</h1>
 					</div>
 <!-- Game -->
 					<div class="game-block__main main-block">
 						<div class="main-block__column">
-							<div class="main-block__item"><img src="assets/cards/card_1.png" alt=""></div>
-							<div class="main-block__item"><img src="assets/cards/card_2.png" alt=""></div>
-							<div class="main-block__item"><img src="assets/cards/card_3.png" alt=""></div>
+							<div class="main-block__item"><img id='card-item1' src="assets/cards/card_1.png" alt=""></div>
+							<div class="main-block__item"><img id='card-item2' src="assets/cards/card_2.png" alt=""></div>
+							<div class="main-block__item"><img id='card-item3'src="assets/cards/card_3.png" alt=""></div>
 						</div>
 					</div>
 <!-- Bottom -->
 	<!-- Start -->	
 					<div class="game-block__bottom bottom-block">
-						<div class="bottom-block__button btn disabled">i'm lucky</div>
+						<div class="bottom-block__button btn">i'm lucky</div>
 	<!-- Output -->	
-						<div class="bottom-block__output output-block">
+						<div class="bottom-block__output output-block disabled">
 							<div class="output-block__text">
 								<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis deserunt laborum vel sed rerum laboriosam numquam tenetur architecto
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus omnis enim perferendis earum voluptas quod autem, repellat qui ratione veritatis eligendi, officiis dolore quis numquam commodi minima adipisci sint, voluptate?</p>
 							</div>
 							<div class="output-block__buttons">
-								<div class="output-block__button">try again</div>
-								<div class="output-block__button">share</div>
+								<div class="output-block__button"><a href="#">try again</a></div>
+								<div class="output-block__button"><a href="#">share</a></div>
 							</div>
 						</div>
 					</div>
@@ -49,5 +46,7 @@
 		</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/cards-and-answers.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

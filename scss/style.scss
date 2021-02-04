@@ -61,16 +61,13 @@ $md4:550;
 
 //--- General
 .btn{
-	display: block;
-	height: 50px;
-	line-height: 50px;
 	display: inline-block;
 	background-color: $btnColor;
 	color: $textColor2;
 	font-family: $font-familyMain;
-	font-size: 15px;
-	letter-spacing: 1.5px;
-	padding: 0 33px;
+	font-size: 22px;
+	padding: 0 2em;
+	line-height: 2.5em;
 	text-transform: uppercase;
 	white-space: nowrap;
 	border: 4px solid $textColor2;
@@ -93,6 +90,9 @@ body{
 	display: none;
 }
 
+a{
+	color: $textColorMain;
+}
 
 // Game Block styles
 
@@ -171,6 +171,8 @@ body{
 }
 .bottom-block {
 	&__button {
+	@media (max-width: $md2+px) {font-size: 18px;}
+	@media (max-width: $md4+px) {font-size: 14px; margin: 0;}
 	}
 	&__output {
 		margin: 0 35px;
@@ -189,7 +191,7 @@ body{
 		@media (max-width: $md2+px) {padding: 20px;}
 		@media (max-width: $md4+px) {
 			padding: 10px;
-			background-color: rgba(255,250,241,0.55);
+			background-color: rgba(255,250,241,0.65);
 			box-shadow: 0 0 50px rgb(212,210,208);
 		}
 	}
@@ -200,7 +202,7 @@ body{
 		@media (max-width: $md4+px) {margin: 10px 0 10px 0;}
 	}
 	&__button {
-		&:last-child{
+		&:last-child a{
 			color: $textColor2;
 		}
 		&:hover{
@@ -208,11 +210,3 @@ body{
 		}
 	}
 }
-
-.hello{
-	border: $border;
-}
-
-
-
-
