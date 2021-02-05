@@ -75,20 +75,3 @@ tryAgain.addEventListener('click', function(){
 	img2.src = 'assets/cards/card_2.png';
 	img3.src = 'assets/cards/card_3.png';	
 });
-
-//
-//
-//
-// Prediction
-
-
-
-/*let keyArr = Object.keys(tarot);
-let cardKeyArr = [];
-
-for(let i=0; i<keyArr.length; i++){
-	cardKeyArr.push(tarot[keyArr[i]].cardKey);
-}
-let unique = [...new Set(cardKeyArr)];
-
-console.log(cardKeyArr);*/
