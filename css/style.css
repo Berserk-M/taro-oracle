@@ -141,12 +141,8 @@ body {
   .game-block__bottom {
     margin: 40px auto 0 auto;
     padding: 0 0 20px 0; }
-    @media (max-width: 850px) {
-      .game-block__bottom {
-        margin: 30px auto 0 auto; } }
     @media (max-width: 550px) {
       .game-block__bottom {
-        margin: 15px auto 0 auto;
         padding: 0; } }
 
 .header-block__text {
@@ -174,21 +170,20 @@ body {
   .main-block__item img {
     width: 100%; } }
 
-.bottom-block__button {
-  margin: 40px 0 0 0; }
-  @media (max-width: 850px) {
-    .bottom-block__button {
-      font-size: 18px; } }
-  @media (max-width: 550px) {
-    .bottom-block__button {
-      font-size: 14px; } }
+@media (max-width: 850px) {
+  .bottom-block__button {
+    font-size: 18px; } }
+
+@media (max-width: 550px) {
+  .bottom-block__button {
+    font-size: 14px; } }
 
 .bottom-block__output {
   margin: 0 35px;
-  font-size: 22px; }
+  font-size: 18px; }
   @media (max-width: 850px) {
     .bottom-block__output {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media (max-width: 550px) {
     .bottom-block__output {
       font-size: 14px;
@@ -212,7 +207,7 @@ body {
       box-shadow: 0 0 50px #d4d2d0; } }
 
 .output-block__buttons {
-  margin: 20px 0 0 0;
+  margin: 40px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +215,7 @@ body {
   justify-content: space-around; }
   @media (max-width: 550px) {
     .output-block__buttons {
-      margin: 10px 0 10px 0; } }
+      margin: 20px 0 10px 0; } }
 
 .output-block__button {
   cursor: pointer; }
