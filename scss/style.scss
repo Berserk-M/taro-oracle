@@ -85,6 +85,15 @@ body{
 	display: none;
 }
 
+a{
+	color: $textColor2;
+	&:visited{
+		color: $textColor2;
+	}
+	&:hover{
+		text-decoration: underline;
+	}
+}
 // Game Block styles
 
 .wrapper {
@@ -193,14 +202,13 @@ body{
 	}
 	&__button {
 		cursor: pointer;
-		a{
-			color: $textColor2;
-			&:visited{
-				color: $textColor2;
-			}
-		}
 		&:hover{
 			text-decoration: underline;
 		}
 	}
+}
+
+.credits{
+	text-align: center;
+	margin: 60px 0 10px 0;
 }

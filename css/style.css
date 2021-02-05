@@ -93,6 +93,13 @@ body {
 .disabled {
   display: none; }
 
+a {
+  color: #E32300; }
+  a:visited {
+    color: #E32300; }
+  a:hover {
+    text-decoration: underline; }
+
 .wrapper {
   background-image: url("../assets/img/bg-main.svg");
   background-repeat: no-repeat;
@@ -219,9 +226,9 @@ body {
 
 .output-block__button {
   cursor: pointer; }
-  .output-block__button a {
-    color: #E32300; }
-    .output-block__button a:visited {
-      color: #E32300; }
   .output-block__button:hover {
     text-decoration: underline; }
+
+.credits {
+  text-align: center;
+  margin: 60px 0 10px 0; }
