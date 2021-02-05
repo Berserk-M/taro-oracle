@@ -99,6 +99,8 @@ body {
 
 a {
   color: #53210F; }
+  a:visited {
+    color: #53210F; }
 
 .wrapper {
   background-image: url("../assets/img/bg-main.svg");
@@ -229,7 +231,10 @@ a {
     .output-block__buttons {
       margin: 10px 0 10px 0; } }
 
-.output-block__button:last-child a {
+.output-block__button a:last-child {
+  color: #E32300; }
+
+.output-block__button a:visited {
   color: #E32300; }
 
 .output-block__button:hover {

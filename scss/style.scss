@@ -92,6 +92,9 @@ body{
 
 a{
 	color: $textColorMain;
+	&:visited {
+		color: $textColorMain;
+	}
 }
 
 // Game Block styles
@@ -202,9 +205,15 @@ a{
 		@media (max-width: $md4+px) {margin: 10px 0 10px 0;}
 	}
 	&__button {
-		&:last-child a{
-			color: $textColor2;
+		a{
+			&:last-child {
+				color: $textColor2;
+			}
+			&:visited {
+				color: $textColor2;
+			}
 		}
+		
 		&:hover{
 			text-decoration: underline;
 		}
