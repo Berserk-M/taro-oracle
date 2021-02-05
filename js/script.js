@@ -27,8 +27,6 @@ let keysTarotArr = Object.keys(tarot);
 // Variables
 let resultArr, firstCardURL, secondCardURL, thirdCardURL;
 
-
-//
 //
 //
 //
@@ -37,11 +35,11 @@ let resultArr, firstCardURL, secondCardURL, thirdCardURL;
 let buttonGame = document.querySelector('.bottom-block__button');
 let result = document.querySelector('.bottom-block__output');
 let tryAgain = document.querySelector('.output-block__button');
+let prediction = document.querySelector('.output-block__text > p');
 
 let img1 = document.querySelector('#card-item1');
 let img2 = document.querySelector('#card-item2');
 let img3 = document.querySelector('#card-item3');
-
 
 buttonGame.addEventListener('click', function(){
 	this.classList.add('disabled');
@@ -55,8 +53,10 @@ buttonGame.addEventListener('click', function(){
 	img1.src = firstCardURL;
 	img2.src = secondCardURL;
 	img3.src = thirdCardURL;
-});
 
+	prediction.innerHTML = `${tarot[resultArr[0]].description}, ${tarot[resultArr[1]].description} and at the end ${tarot[resultArr[2]].description}!`;
+
+});
 
 tryAgain.addEventListener('click', function(){
 	result.classList.add('disabled');
@@ -66,3 +66,20 @@ tryAgain.addEventListener('click', function(){
 	img2.src = 'assets/cards/card_2.png';
 	img3.src = 'assets/cards/card_3.png';	
 });
+
+//
+//
+//
+// Prediction
+
+
+
+/*let keyArr = Object.keys(tarot);
+let cardKeyArr = [];
+
+for(let i=0; i<keyArr.length; i++){
+	cardKeyArr.push(tarot[keyArr[i]].cardKey);
+}
+let unique = [...new Set(cardKeyArr)];
+
+console.log(cardKeyArr);*/
