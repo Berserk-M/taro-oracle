@@ -54,8 +54,11 @@ buttonGame.addEventListener('click', function(){
 	img2.src = secondCardURL;
 	img3.src = thirdCardURL;
 
-	prediction.innerHTML = `${tarot[resultArr[0]].description}, ${tarot[resultArr[1]].description} and at the end ${tarot[resultArr[2]].description}!`;
-
+	if (resultArr.some(elem => tarot[elem].cardKey = 'bonus')) {
+		prediction.innerHTML = 'Oh my Godness, you are so lucky that nothing bad can beat you!'
+	}else{
+		prediction.innerHTML = `${tarot[resultArr[0]].description}, ${tarot[resultArr[1]].description} and at the end ${tarot[resultArr[2]].description}!`;
+	}
 });
 
 tryAgain.addEventListener('click', function(){

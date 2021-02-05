@@ -211,24 +211,3 @@ body{
 		}
 	}
 }
-
-
-
-[data-tooltip] {
-    position: relative; /* Относительное позиционирование */ 
-   }
-   [data-tooltip]::after {
-    content: attr(data-tooltip); /* Выводим текст */
-    //position: absolute; /* Абсолютное позиционирование */
-    width: 300px; /* Ширина подсказки */
-    //left: 0; bottom: 0; /* Положение подсказки */
-    font-size: 14px;
-    color: $textColor2; /* Цвет текста */
-    padding: 0.5em; /* Поля вокруг текста */
-    pointer-events: none; /* Подсказка */
-    opacity: 0; /* Подсказка невидима */
-    transition: 1s; /* Время появления подсказки */
-   } 
-   [data-tooltip]:hover::after {
-    opacity: 1; /* Показываем подсказку */
-   }

@@ -235,30 +235,3 @@ body {
       color: #E32300; }
   .output-block__button:hover {
     text-decoration: underline; }
-
-[data-tooltip] {
-  position: relative;
-  /* Относительное позиционирование */ }
-
-[data-tooltip]::after {
-  content: attr(data-tooltip);
-  /* Выводим текст */
-  width: 300px;
-  /* Ширина подсказки */
-  font-size: 14px;
-  color: #E32300;
-  /* Цвет текста */
-  padding: 0.5em;
-  /* Поля вокруг текста */
-  pointer-events: none;
-  /* Подсказка */
-  opacity: 0;
-  /* Подсказка невидима */
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  /* Время появления подсказки */ }
-
-[data-tooltip]:hover::after {
-  opacity: 1;
-  /* Показываем подсказку */ }
