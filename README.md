@@ -16,7 +16,7 @@
 ## General info
 It's a study progect from Codecademy course.
 The task:
->>Build a message generator program. Every time a user runs a program, they should get a new, randomized output. To make your program truly random, the message that it outputs should be made up of at least three different pieces of data.
+>Build a message generator program. Every time a user runs a program, they should get a new, randomized output. To make your program truly random, the message that it outputs should be made up of at least three different pieces of data.
 
 ## Screenshots
 ![Example screenshot](assets/img/screen-shot.png)
