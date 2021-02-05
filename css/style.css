@@ -82,7 +82,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   white-space: nowrap;
   border: 4px solid #E32300;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
   .btn--w {
     background-color: #fff;
     color: #000000; }
@@ -96,11 +97,6 @@ body {
 
 .disabled {
   display: none; }
-
-a {
-  color: #53210F; }
-  a:visited {
-    color: #53210F; }
 
 .wrapper {
   background-image: url("../assets/img/bg-main.svg");
@@ -231,10 +227,38 @@ a {
     .output-block__buttons {
       margin: 10px 0 10px 0; } }
 
-.output-block__button a {
-  color: #E32300; }
-  .output-block__button a:visited {
+.output-block__button {
+  cursor: pointer; }
+  .output-block__button a {
     color: #E32300; }
+    .output-block__button a:visited {
+      color: #E32300; }
+  .output-block__button:hover {
+    text-decoration: underline; }
 
-.output-block__button:hover {
-  text-decoration: underline; }
+[data-tooltip] {
+  position: relative;
+  /* Относительное позиционирование */ }
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  /* Выводим текст */
+  width: 300px;
+  /* Ширина подсказки */
+  font-size: 14px;
+  color: #E32300;
+  /* Цвет текста */
+  padding: 0.5em;
+  /* Поля вокруг текста */
+  pointer-events: none;
+  /* Подсказка */
+  opacity: 0;
+  /* Подсказка невидима */
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  /* Время появления подсказки */ }
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  /* Показываем подсказку */ }

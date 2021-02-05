@@ -72,6 +72,7 @@ $md4:550;
 	white-space: nowrap;
 	border: 4px solid $textColor2;
 	border-radius: 3px;
+	cursor: pointer;
 	&--w{
 		background-color: #fff;
 		color: #000000;
@@ -88,13 +89,6 @@ body{
 
 .disabled{
 	display: none;
-}
-
-a{
-	color: $textColorMain;
-	&:visited {
-		color: $textColorMain;
-	}
 }
 
 // Game Block styles
@@ -205,6 +199,7 @@ a{
 		@media (max-width: $md4+px) {margin: 10px 0 10px 0;}
 	}
 	&__button {
+		cursor: pointer;
 		a{
 			color: $textColor2;
 			&:visited{
@@ -216,3 +211,24 @@ a{
 		}
 	}
 }
+
+
+
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    //position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    //left: 0; bottom: 0; /* Положение подсказки */
+    font-size: 14px;
+    color: $textColor2; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+   }
