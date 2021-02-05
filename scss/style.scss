@@ -206,14 +206,11 @@ a{
 	}
 	&__button {
 		a{
-			&:last-child {
-				color: $textColor2;
-			}
-			&:visited {
+			color: $textColor2;
+			&:visited{
 				color: $textColor2;
 			}
 		}
-		
 		&:hover{
 			text-decoration: underline;
 		}

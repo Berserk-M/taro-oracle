@@ -231,11 +231,10 @@ a {
     .output-block__buttons {
       margin: 10px 0 10px 0; } }
 
-.output-block__button a:last-child {
+.output-block__button a {
   color: #E32300; }
-
-.output-block__button a:visited {
-  color: #E32300; }
+  .output-block__button a:visited {
+    color: #E32300; }
 
 .output-block__button:hover {
   text-decoration: underline; }
